@@ -89,7 +89,7 @@
   <!-- Page Title -->
   <div class="page-title bottom-padded black">      
     <!-- Page Title Background -->
-    <div class="page-title-bg editable-alpha" data-alpha="20"><img src="images/blog/post-big_01.jpg" alt="" /></div>        
+    <div class="page-title-bg editable-alpha" data-alpha="20"><img src="projects/capstone/encryption2.jpg" alt="" /></div>        
     <div class="content padded dark">        
       <!-- Top Bar -->
       <div class="top-bar">
@@ -97,11 +97,16 @@
         <div class="pull-left">
           <a href="index.html#portfolio" class="btn btn-default btn-pull-up"><i class="icon-before fa fa-chevron-left"></i>Home Page</a>
         </div>
+        <!-- View Project -->
+        <div class="pull-right">     
+          <a href="projects/capstone/capstone_project.pdf" target="_blank" class="btn btn-default btn-pull-up"></i>Read full paper</a>   
+          <a href="https://github.com/yaroslavkechkin/capstone" target="_blank" class="btn btn-default btn-pull-up"><i class="icon-before fa fa-chevron-right"></i>View on GitHub</a>
+        </div>
       </div>
       
       <!-- Page Title Content -->
       <div class="padded-vertical">
-        <span class="post-date-alt">March, 2012</span>
+        <span class="post-date-alt">April, 2012</span>
         <h1 class="medium">Software Development Life Cycle</h1>
         <h4>Encryption Software</h4>
       </div>          
@@ -114,9 +119,30 @@
     <div class="row">
       <!-- Content -->
       <div class="col-lg-12">
-        <p class="lead">Quisque augue mi, semper eu dictum a, consectetur non est. Quisque sollicitudin, orci vel dictum mollis, orci massa mollis tellus, sed condimentum lacus enim euismod turpis. Donec ultrices mi vel diam ornare rutrum. Ut vitae ipsum diam. Ut scelerisque, libero vel facilisis malesuada, turpis ligula interdum massa, sit amet pellentesque elit dolor et enim. </p>
-        <p>Aenean at ultricies nunc. Vestibulum mattis ullamcorper lectus, porta porttitor urna molestie at. In fermentum, ligula at malesuada viverra, lectus mi pharetra purus, vel feugiat nunc nunc sit amet felis. Vivamus nec ligula malesuada, accumsan turpis id, tempus diam. Aenean sit amet auctor orci. Aenean dui justo, imperdiet at luctus quis, vehicula id turpis. Vestibulum in sapien ultrices, ultricies orci vel, bibendum velit.  Aenean id leo eu eros tincidunt ullamcorper quis pulvinar mi. Maecenas et egestas dui, nec sagittis neque. Quisque neque erat, pharetra at velit ut, molestie lacinia nisl. Aliquam ornare fermentum arcu quis pellentesque. Aliquam non leo non magna vestibulum elementum egestas eget nisl. Aliquam ac lacus mi. Aenean venenatis orci leo, sed rhoncus urna hendrerit a. Duis vitae purus dui. Nulla vestibulum odio a aliquet fermentum. Phasellus a condimentum mi. Fusce id tortor vel risus sodales ullamcorper. Quisque eget consectetur risus. </p>
-        <p>Aenean id leo eu eros tincidunt ullamcorper quis pulvinar mi. Maecenas et egestas dui, nec sagittis neque. Quisque neque erat, pharetra at velit ut, molestie lacinia nisl. Aliquam ornare fermentum arcu quis pellentesque. Aliquam non leo non magna vestibulum elementum egestas eget nisl. Aliquam ac lacus mi. Aenean venenatis orci leo, sed rhoncus urna hendrerit a. Duis vitae purus dui. Nulla vestibulum odio a aliquet fermentum. Phasellus a condimentum mi. Fusce id tortor vel risus sodales ullamcorper. Quisque eget consectetur risus. </p>          
+        <h4>Program Description</h4>
+        <p class="sub">The program that I’ve created is the simple program to encrypt text files using ASCII alphabet. I used 128 regular ASCII and 128 extended ASCII characters in the encryption process. Program has a simple menu design that prompts the user to enter their choice of action and enter the path to the text file selected and the program will encrypt the file using either user specified key or generated randomly. The program saves output in a separate text file in the directory where the *.exe was ran. Using 256 characters to encrypt the text provides better security over using 26 alphabetical characters like regular Vigenere cipher uses. <img class="centered" src="projects/capstone/encryption.png" alt="" /></p>        
+        
+        <h4>Software Development Life Cycle</h4>        
+        <p class="sub">
+          Software development life cycle (SDLC) is the process of creating or altering software systems. It consists of six steps: Analysis, Design, Implementation, Testing, Evaluation, and Maintenance. In analysis phase I was gathering needed tools and information needed to start working on the project. Microsoft Visual Studio 2010 Express was used to write the code of the program and www.cplusplus.com website was used to resolve problems that I encountered during the implementation phase. I created the outline for schedule and a work breakdown structure to divide the process on deliverables and allocate time for each step of the project. I created the outline of how the program should look and work to create the architecture in the design phase. The program was required to encrypt the text and save the output in the file for later use and decryption.<br>
+          <img class="centered" src="projects/capstone/sdlc.jpg" alt="" />
+          Design phase started with creating a pseudo code of the program outlining each function and its role in the program. The design of the program requires user to run the program from the beginning for new iteration because it causes problems with saved values of key and input text (minor flaw which will be eliminated in later versions).<br>
+          The source code was written during implementation phase. It was written in C++ language using Microsoft Visual Studio 2010 Express.
+          During testing phase I was carefully checking that every function performs its role without mistakes. During testing phase I found several mistakes with encryption and decryption modules which were not producing viable results and had to be modified.<br>
+          During evaluation phase I was testing the integrity and usability of the program. Criteria were: easy to use, simple and user friendly interface, fast generation of ciphertext or plaintext from ciphertext, use of small amount of memory. Specified criteria were met and program is easy and fast to use even on big amounts of text. <br>
+        </p>
+        <h4>Quality Management</h4>        
+        <p class="sub">
+          During creation of this program I used the process called DMAIC – the Six Sigma quality improvement methodology. DMAIC stands for Define, Measure, Analyze, Improve and Control. DMAIC methodology ties tightly with Software development life cycle.<br> 
+          After finishing the development, I went back and started to look for improvements on the program. First I started over from the beginning and looked over the requirements users might have. I added two more options – auto key encryption and decryption. After redefining user requirements I started gathering information required for me to perform this change. After implementation was successful I tested all part of the program separately to check for unit errors and then tested the whole program to see that all parts are working together. As a last phase of DMAIC methodology I documented all changes and added changes into a user manual.<br>
+          After first stage of quality improving, I went back and started the DMAIC process again. I started with identifying the problem. The first version of the program was written in a single file and was very bulky and it was easy to get lost in it. I started studying on functions and constructors. This helped me to divide the program on 3 files: header, source code and main. This helped to break the whole program on separate elements which are easy to look through and understand what part does what. Implementation process was hard and required many hours of testing but it was completed on time before the project deadline. After two cycles of quality improvement, the program now does two types of encryption with decryption options and the outline of the program is easier to understand and follow.<br>
+        </p>
+        <p class="sub">
+          More documentation and source code are available on GitHub.<br>
+        </p>
+        <div class="pull-left">
+          <a href="https://github.com/yaroslavkechkin/capstone" target="_blank" class="btn btn-blue btn-pull-up"><i class="icon-before fa fa-chevron-right"></i>View on GitHub</a>
+        </div>
       </div>
       <!-- End Content -->
     </div>
