@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Title -->
+<title>Personal Project</title>
+
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yaroslav Y. Kechkin, Personal Project, Home Network Lab, penetration testing, malware analysis, software testing">
+<meta name="keywords" content="responsive, one page, resume, bootstrap, personal page, html5, css3">
+<meta name="Yaroslav Y. Kechkin" content="">
+
+<link rel="shortcut icon" href="images/favicon.png">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Retina Images -->
+<script>if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)
+    document.cookie='HTTP_IS_RETINA=1;path=/';</script>
+<!-- End Retina Images -->
+
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/animations.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="colors/blue.css" id="colors" />
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-2.1.2-min.js"></script>
+<script type="text/javascript" src="js/jquery.localScroll-2.0-min.js"></script>
+<script type="text/javascript" src="js/page-loader.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- Loader -->
+<div id="page-loader">  </div>
+<!-- Loader / End -->
+
+<!-- Header  -->
+<header id="nav-content" class="vertical-nav nav-black">
+    
+    <!-- Photo -->
+  <div class="me-photo">
+    <a href="index.html#profile"><img src="images/my-photo.jpg" alt="" /></a>
+  </div>
+    
+  <!-- Navigation -->
+  <ul class="menu nav me-nav">
+    <li class="menu-item"><a href="index.html#profile"><span>Profile</span><i class="fa fa-user"></i></a></li>
+    <li class="menu-item"><a href="index.html#resume"><span>Resume</span><i class="fa fa-pencil"></i></a></li>
+    <li class="menu-item"><a href="index.html#portfolio"><span>Portfolio</span><i class="fa fa-desktop"></i></a></li>        
+    <li class="menu-item"><a href="index.html#contact"><span>Contact</span><i class="fa fa-phone"></i></a></li>        
+  </ul>
+  
+  <!-- Copyright -->
+  <span class="copyright hidden-md">© 2017 <b>Yaroslav Y. Kechkin</b>.</span>
+
+</header>
+<!-- Header / End -->
+
+<!-- Page Content -->
+<div id="page-content">
+
+  <!-- Page Title -->
+  <div class="page-title bottom-padded black">      
+    <!-- Page Title Background -->
+    <div class="page-title-bg editable-alpha" data-alpha="20"><img src="projects/network/Lab_Network.png" alt="" /></div>        
+    <div class="content padded dark">        
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <!-- Go Back -->
+        <div class="pull-left">
+          <a href="index.html#portfolio" class="btn btn-default btn-pull-up"><i class="icon-before fa fa-chevron-left"></i>Home Page</a>
+        </div>
+      </div>
+      
+      <!-- Page Title Content -->
+      <div class="padded-vertical">
+        <span class="post-date-alt">September, 2013</span>
+        <h1 class="medium">Home Network Lab</h1>
+      </div>          
+    </div>          
+  </div>
+  <!-- End Page Title -->
+
+  <!-- Page Content -->
+  <div class="container content">    
+    <div class="row">
+      <!-- Content -->
+      <div class="col-lg-12">
+        <p><h2>Why do i need a Virtual Lab</h2></p>
+        <p class="sub">
+          As a curious computer scientist who is always keen to test out the latest Operating System, application, or learn something new, I always used to find it a bit of a challenge to get my test environments going using only physical hardware. Sometimes you may be limited by the hardware you have at your disposal, or perhaps you don’t have any spare servers to use. In these cases, I found find setting up my own virtualized test environment will be extremely useful for my development, testing, and evaluation purposes.<br>
+          There are a quite a few virtualization products out there, such as VMware Server, VMware ESXi, VMware Workstation Pro, Microsoft's Hyper-V and Sun’s VirtualBox, to name just a few. When i first started this project i had access to VMware Workstation Pro license from university and decided to stick with it, because i did not have an extra server powerful enough to run ESXi and several virtual machines at a time, and Hyper-V was not as good back then as VMware Workstation Pro.<br>
+          To start, I installed VMware workstation on my laptop - Asus ROG G750JH running Microsoft Windows 8.1 Pro (Windows 10 now), loaded with Intel Core I7 2.4 GHz (3.2 GHz Boost) and 24 GB of DDR3 RAM. It is a powerfull machine capable of running multiple virtual machines with ease.<br>
+          Over the years, the lab was used to host webserver & database server, evaluate applications, develop software, practice penetration testing &  system security, practice reverse engineering & malware analysis, web application design, and Windows & Linux system administration.
+        </p>
+        <p><h2>Virtual Mchines and their functions</h2></p>
+        <p class="sub">
+          <span class="text-primary">Windows Server 2016</span> - Active Directory (AD) Domain Controller, DNS Server, firewall, network monitoring. This virtual machine has connection to external switch and manages Internet connections from other machines. AD was setup to simplify user creation and managing user permissions on the network.<br>
+        </p>
+        <img class="centered" src="projects/network/Lab_Network.png" alt="" />
+        <h4>Penetration Testing Network Segment</h4>
+        <p class="sub">  
+          <span class="text-primary">PFSense</span> - router and firewall to separate this network segment from others.<br>
+          <span class="text-primary">Kali Linux</span> - for testing networks, web applications, and security of other machines.<br>
+          <span class="text-primary">Windows 7</span> - practice penetration testing and hardening of the Windows operating system.<br>
+          <span class="text-primary">Windows XP SP3</span> - practice penetration testing and hardening of the Windows operating system.<br>
+          <span class="text-primary">Metasploitable</span> - practice penetration testing.<br>
+          <span class="text-primary">Ubuntu</span> - practice penetration testing and hardening of the Linux operating system.<br>
+        </p> 
+          <h4>Reverse Engineering & Malware Analysis Segment</h4>
+        <p class="sub">
+          <span class="text-primary">PFSense</span> - router and firewall to separate this network segment from others.<br>
+          <span class="text-primary">Windows Server 2012 R2</span> - has IDA Pro with Hexrays, Visual Studio 2017 (Earlier versions are available if needed), Volatility Framework, Wireshark and other software neede to disect the malware executables.<br>
+          <span class="text-primary">Windows Server 2008 R2</span> - used as Command and Control center for botnet testing.<br>
+          <span class="text-primary">Windows 7</span> - test the behavior of the malware. Some monitoring software like Process Monitor is installed.<br>
+          <span class="text-primary">Windows XP SP3</span> - test the behavior of the malware. Some monitoring software like Process Monitor is installed.<br>
+        </p>
+        <h4>Software Testing and Code Development Segment</h4>
+        <p class="sub">
+          <span class="text-primary">PFSense</span> - router and firewall to separate this network segment from others.<br>
+          <span class="text-primary">Windows 10 Education</span> - used primarily for code & web development. Has Visual Studio with Android development tools, SQL, IIS, Sublime text editor, TeX Studio, and software for graphics design and editing.<br>
+          <span class="text-primary">Windows 10 Education</span> - another version of Windows 10 is used to install and test updates before installing them on main system & software testing (different browsers, editors, media players, etc.). It is also used to test Python or PowerShell scripts, play with registery settings, firewall and services settings, Group Policy settings, and general hardening of the system.<br>
+        </p>
+        <h4>Recent Changes</h4>
+        <p class="sub">
+          The project was started in September 2013 with only 3 machines on the network. It has expanded since then into full blown home laboratory suited for multitude of tasks. Recently, the server, which was holding AD on the network, was upgraded from Windows Server 2012 R2 to Windows Server 2016. Several VMs were upgraded from Windows 7 and 8.1 to Windows 10. Additionally the whole network was migrated from <span class="text-primary">VMware Workstation 12 Pro</span> to <span class="text-primary">Hyper-V</span>. With this change from Type 2 to Type 1 Hypervisor, I feel, virtual machines are running smoother and put less strain on the hardware, which makes running multiple virtual machines and performing tasks a lot easier.
+        </p>
+      </div>
+      <!-- End Content -->
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">      
+      <!-- Contact List -->
+      <ul class="list-inline">
+        <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>2554 Michigan Court, Panama City, Florida 32405, USA</li>
+        <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i>yaroslavkechkin@gmail.com</li>
+        <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+1 (850) 896-8431</li>
+      </ul>       
+    </div>
+    <!-- End Bottom Bar -->        
+  </div>  
+</div>
+<!-- Page Content / End -->
+
+</body>
+</html>
